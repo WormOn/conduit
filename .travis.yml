@@ -24,8 +24,8 @@ jobs:
       cache:
         cargo: true
       script:
-        - cargo check
-        - cargo test
+        - cargo check --frozen
+        - cargo test --frozen
 
     - language: go
       go: 1.9
